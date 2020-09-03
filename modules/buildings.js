@@ -1,4 +1,4 @@
-Object.defineProperty(Object.prototype, 'vehicleTable',{
+Object.defineProperty(Object.prototype, 'vehicles',{
     value : function(){
         try {
             var rows = this.querySelector("tbody").querySelectorAll("tr");
