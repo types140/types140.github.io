@@ -8,7 +8,7 @@ Object.defineProperty(Object.prototype, 'vehicles',{
 
         var vehicles = [];
         for(var i=0;i<rows.length;i++){
-            var attr = rows[i].querySelectorAll("td")[1].attributes.sortvalue.value;
+            var attr = rows[i].children[2].attributes.sortvalue.value;
             var pattern = new RegExp(/(?<vehicleName>.*)\s(?<vehicleId>\d+)/g);
             var filtered = pattern.exec(attr);
             vehicles.push({"name":filtered[1],"id":filtered[2]});
