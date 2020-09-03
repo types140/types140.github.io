@@ -1,4 +1,4 @@
-String.prototype.vehiclesInTable = function() {
+Object.prototype.vehicleTable = function(){
   try {
     var rows = this.querySelector("tbody").querySelectorAll("tr");
   } catch(e) {
