@@ -1,5 +1,4 @@
 Object.prototype.vehicleTable = function(){
-    console.log(this);
   try {
     var rows = this.querySelector("tbody").querySelectorAll("tr");
   } catch(e) {
