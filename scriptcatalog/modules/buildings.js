@@ -7,6 +7,7 @@ Object.prototype.vehicleTable = function(){
 
   var vehicles = [];
   for(var i=0;i<rows.length;i++){
+      console.log(rows[i].querySelectorAll("td")[2]);
     var attr = rows[i].querySelectorAll("td")[2].attributes.sortvalue.value;
     var pattern = new RegExp(/(?<vehicleName>.*)\s(?<vehicleId>\d+)/g);
     var filtered = pattern.exec(attr);
